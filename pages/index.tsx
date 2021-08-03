@@ -80,11 +80,11 @@ export default function Home() {
                                         alt="converted-image"
                                     />
 
-                                    {/* <a href={gif}>
+                                    <a href={gif}>
                                         <div className="upload-button green">
                                             Download GIF
                                         </div>
-                                    </a> */}
+                                    </a>
 
                                     <div
                                         className="upload-button blue"
