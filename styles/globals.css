@@ -1,16 +1,74 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.upload-block {
+    background: rgba(236, 236, 236, 0.9);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0px;
+    position: relative;
+    min-width: 300px;
+    max-width: 500px;
+    width: 100% !important;
+}
+
+.text-description {
+    text-align: center;
+    padding: 30px 30px 20px;
+    width: 100%;
+}
+
+.upload-button {
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 12px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    background: rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.upload-button.blue {
+    background-color: #0070f3;
+}
+
+.upload-block input[type='file'] {
+    width: 100%;
+    height: 40px;
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    left: 0px;
+    margin: 0px;
+    opacity: 0;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }

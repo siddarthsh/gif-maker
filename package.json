@@ -9,6 +9,8 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@emotion/react": "^11.4.0",
+        "@emotion/styled": "^11.3.0",
         "@ffmpeg/core": "^0.8.5",
         "@ffmpeg/ffmpeg": "^0.9.8",
         "next": "11.0.1",
