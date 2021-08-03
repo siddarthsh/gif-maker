@@ -26,6 +26,26 @@ a {
     width: 100% !important;
 }
 
+.upload-block input[type='file'] {
+    width: 100%;
+    height: 40px;
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    outline: none;
+    height: 100%;
+    left: 0px;
+    margin: 0px;
+    opacity: 0;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
 .text-description {
     text-align: center;
     padding: 30px 30px 20px;
@@ -46,29 +66,45 @@ a {
     background: rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .upload-button.blue {
     background-color: #0070f3;
 }
 
-.upload-block input[type='file'] {
-    width: 100%;
-    height: 40px;
-    margin: 0px 0px 10px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    color: rgb(0, 0, 0);
-    padding: 0px 10px;
-    outline: none;
+.upload-button.green {
+    background-color: green;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    border-color: #000 transparent #000 transparent;
+    -webkit-animation: lds-dual-ring 1.2s linear infinite;
+    -moz-animation: lds-dual-ring 1.2s linear infinite;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.cursor-pointer {
     cursor: pointer;
-    height: 100%;
-    left: 0px;
-    margin: 0px;
-    opacity: 0;
-    padding: 0px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
