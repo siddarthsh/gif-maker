@@ -111,9 +111,7 @@ export default function Home() {
                         </>
                     ) : (
                         <>
-                            <p className="text-description">
-                                Upload a MP4, or MOV.
-                            </p>{' '}
+                            <p className="text-description">Upload a MP4.</p>{' '}
                             <div className="upload-button">Choose File</div>
                             <input
                                 type="file"

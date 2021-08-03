@@ -1,4 +1,11 @@
-module.exports = {
+const withPWA = require('next-pwa');
+
+module.exports = withPWA({
+    pwa: {
+        dest: 'public',
+        register: true,
+        skipWaiting: true,
+    },
     reactStrictMode: true,
     async headers() {
         return [
@@ -17,4 +24,4 @@ module.exports = {
             },
         ];
     },
-};
+});
